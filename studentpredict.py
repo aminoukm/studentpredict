@@ -174,7 +174,7 @@ pivot_data = df.pivot_table(values='Previous qualification (grade)',
                             index='Mother\'s qualification',
                             columns='Father\'s qualification',
                             aggfunc='mean')
-
+# 5. Qualification des parents et réussite académique (Heatmap)
 plt.figure(figsize=(10, 8))
 sns.heatmap(pivot_data, annot=True, cmap='YlGnBu', fmt=".1f")
 plt.title('Heatmap : Qualification des parents et notes de qualification antérieure', fontsize=16)
